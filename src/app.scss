@@ -1,6 +1,101 @@
-.hello{
-       background-color: yellow;
-       .sass-bro{
-              color: red;
-       }
+$primayColor: #5d6858;
+$secondaryColor: #dfb05c;
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-image: url(../src/assets/images/BG_Page_1.jpg);
+  height: 1020px;
+  width: 480px;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  .header__top__image {
+    position: relative;
+  }
+  .header__top__image img{
+    overflow: hidden;
+    width: 50px;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .header__profile {
+    position: relative;
+    text-align: center;
+  }
+  .header__profile img{
+    overflow: hidden;
+    width: 245px;
+    height: 455px;
+    border-radius: 10.10rem;
+    border: 3px solid $primayColor;
+    object-fit: cover;
+  }
+  .header__image img {
+    position: absolute;
+    margin-top: 18rem;
+  }
+}
+
+main {
+  background-image: url(../src/assets/images/BG_Page_2.jpg);
+  height: 1020px;
+  width: 480px;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  overflow-y: hidden;
+  position: absolute;
+  .title {
+    padding-top: 15rem;
+    font-weight: 600;
+    font-size: 25px;
+    color: $secondaryColor;
+  }
+  .description {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1rem;
+  }
+  .name {
+    color: $primayColor;
+    line-height: 0.3rem;
+
+    .name__title {
+      font-size: 2.5rem;
+
+      .name__image_right img {
+        position: absolute;
+        right: 0;
+      }
+
+      .name__image_left img {
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  .surah {
+    padding-top: 1rem;
+    font-weight: 600;
+    font-size: 25px;
+    color: $secondaryColor;
+  }
+  .surah__description {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1rem;
+  }
 }

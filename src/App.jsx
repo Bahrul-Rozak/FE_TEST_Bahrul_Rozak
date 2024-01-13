@@ -1,9 +1,14 @@
 import './app.scss'
+import Agenda from './components/Agenda/Agenda'
+import Welcome from './components/Welcome/Welcome'
 
 function App() {
 
   return (
-    <><h1 className="hello">Hello <div className="sass-bro">SASS!</div></h1></>
+    <>
+      <Welcome/>
+      <Agenda/>
+    </>
   )
 }
 

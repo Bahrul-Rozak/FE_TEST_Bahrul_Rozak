@@ -1,42 +1,124 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  background-image: url(../src/assets/images/BG_Page_1.jpg);
+  height: 1020px;
+  width: 480px;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header__top__image {
+  position: relative;
+}
+
+header .header__top__image img {
+  overflow: hidden;
+  width: 50px;
+}
+
+header .header__title {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header .header__profile {
+  position: relative;
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header .header__profile img {
+  overflow: hidden;
+  width: 245px;
+  height: 455px;
+  border-radius: 10.10rem;
+  border: 3px solid #5d6858;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header .header__image img {
+  position: absolute;
+  margin-top: 18rem;
 }
 
-.card {
-  padding: 2em;
+main {
+  background-image: url(../src/assets/images/BG_Page_2.jpg);
+  height: 1020px;
+  width: 480px;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: hidden;
+  position: absolute;
 }
 
-.read-the-docs {
-  color: #888;
+main .title {
+  padding-top: 15rem;
+  font-weight: 600;
+  font-size: 25px;
+  color: #dfb05c;
 }
+
+main .description {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+main .name {
+  color: #5d6858;
+  line-height: 0.3rem;
+}
+
+main .name .name__title {
+  font-size: 2.5rem;
+}
+
+main .name .name__title .name__image_right img {
+  position: absolute;
+  right: 0;
+}
+
+main .name .name__title .name__image_left img {
+  position: absolute;
+  left: 0;
+}
+
+main .surah {
+  padding-top: 1rem;
+  font-weight: 600;
+  font-size: 25px;
+  color: #dfb05c;
+}
+
+main .surah__description {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1rem;
+}
+/*# sourceMappingURL=app.css.map */
