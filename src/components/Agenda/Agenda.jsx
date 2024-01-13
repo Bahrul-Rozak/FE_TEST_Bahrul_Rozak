@@ -5,15 +5,16 @@ import LeafTwoImg from "../../assets/images/Leaf 2.png";
 import FooterImg from "../../assets/images/Flower 2.png";
 import { useEffect } from "react";
 import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Agenda() {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 3000 });
   }, []);
   return (
     <>
       <main>
-        <div className="title animation" data-aos="zoom-in">
+        <div className="title" data-aos="zoom-out">
           <i>Assalamualaikum Wr.Wb</i>
         </div>
         <div className="description">
@@ -23,7 +24,7 @@ function Agenda() {
           </p>
         </div>
         <div className="name">
-          <div className="name__title">
+          <div className="name__title" data-aos="fade-right">
             <div className="name__image_right">
               <img src={LeafOneImg} alt />
             </div>
@@ -32,8 +33,8 @@ function Agenda() {
           <p>Putri dari Bpk Winarno & Ibu Julaikah</p>
           <h1 className="name__title">&</h1>
 
-          <div className="name__title">
-            <div className="name__image_left">
+          <div className="name__title" data-aos="fade-left">
+            <div className="name__image_left" >
               <img src={LeafTwoImg} alt />
             </div>
             <h1>Wira</h1>
@@ -43,7 +44,7 @@ function Agenda() {
         <div className="surah">
           <i>QS.Ar-Rum Ayat 21</i>
         </div>
-        <div className="surah__description">
+        <div className="surah__description" data-aos="zoom-in-up">
           <p>
             Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia <br />
             menciptakan pasangan-pasangan untukmu dari jenismu sendiri,,
@@ -54,7 +55,7 @@ function Agenda() {
             Allah) bagi kaum yang berpikir.
           </p>
         </div>
-        <div className="footer-image">
+        <div className="footer-image" data-aos="zoom-in-up">
           <img src={FooterImg} alt="flower" width="100%" />
         </div>
       </main>
