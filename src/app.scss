@@ -3,6 +3,8 @@ $secondaryColor: #dfb05c;
 
 * {
   font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,32 +21,61 @@ header {
   background-size: cover;
   justify-content: center;
   align-items: center;
-  .header__top__image {
-    position: relative;
+
+  .header__top__image img {
+    position: absolute;
+    right: 0;
   }
-  .header__top__image img{
-    overflow: hidden;
-    width: 50px;
-  }
+
   .header__title {
     text-align: center;
+    color: $primayColor;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 30px;
   }
+
   .header__profile {
     position: relative;
     text-align: center;
   }
-  .header__profile img{
+
+  .header__profile img {
     overflow: hidden;
     width: 245px;
     height: 455px;
-    border-radius: 10.10rem;
+    border-radius: 10.1rem;
     border: 3px solid $primayColor;
     object-fit: cover;
   }
-  .header__image img {
-    position: absolute;
-    margin-top: 18rem;
+
+  .header__profile h1 {
+    color: $primayColor;
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 5rem;
   }
+
+  .header__date {
+    border: 1px solid $secondaryColor;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: $primayColor;
+    width: 40%;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 0.5rem;
+    margin-top: -2rem;
+  }
+
+  .header__description {
+    color: $primayColor;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  
 }
 
 main {
