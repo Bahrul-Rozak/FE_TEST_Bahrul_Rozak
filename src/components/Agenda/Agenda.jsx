@@ -1,16 +1,18 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "./../../app.scss";
 
 import LeafOneImg from "../../assets/images/Leaf 1.png";
 import LeafTwoImg from "../../assets/images/Leaf 2.png";
 import FooterImg from "../../assets/images/Flower 2.png";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
-function Agenda() {
+const Agenda = () => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
+
   return (
     <>
       <main>
@@ -26,16 +28,15 @@ function Agenda() {
         <div className="name">
           <div className="name__title" data-aos="fade-right">
             <div className="name__image_right">
-              <img src={LeafOneImg} alt />
+              <img src={LeafOneImg} alt="Leaf One" />
             </div>
             <h1>Mustika</h1>
           </div>
           <p>Putri dari Bpk Winarno & Ibu Julaikah</p>
           <h1 className="name__title">&</h1>
-
           <div className="name__title" data-aos="fade-left">
-            <div className="name__image_left" >
-              <img src={LeafTwoImg} alt />
+            <div className="name__image_left">
+              <img src={LeafTwoImg} alt="Leaf Two" />
             </div>
             <h1>Wira</h1>
           </div>
@@ -56,11 +57,11 @@ function Agenda() {
           </p>
         </div>
         <div className="footer-image" data-aos="zoom-in-up">
-          <img src={FooterImg} alt="flower" width="100%" />
+          <img src={FooterImg} alt="Flower" width="100%" />
         </div>
       </main>
     </>
   );
-}
+};
 
 export default Agenda;

@@ -1,30 +1,28 @@
-import "./../../app.scss";
-
-import FlowerThreeImg from "../../assets/images/Flower 3.png";
-import LeafOneImg from "../../assets/images/Leaf 1.png";
-
-import PhotoProfileImg from "../../assets/images/Photo Profil.png";
-import FooterImg from "../../assets/images/Flower 4.png";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LeafOneImg from "../../assets/images/Leaf 1.png";
+import PhotoProfileImg from "../../assets/images/Photo Profil.png";
 
-function Welcome() {
+import "./../../app.scss";
+
+const Welcome = () => {
   useEffect(() => {
-    $(".example4").arctext({ radius: 200 });
     AOS.init({ duration: 3000 });
+    $(".example4").arctext({ radius: 200 });
   }, []);
 
   return (
     <>
       <header>
-      
         <div className="header__title ">
-          <h1 className="example4" data-aos="zoom-out">The Wedding Of</h1>
+          <h1 className="example4" data-aos="zoom-out">
+            The Wedding Of
+          </h1>
         </div>
 
         <div className="header__profile">
-          <img src={PhotoProfileImg} alt="profile" width="50%" loading="lazy"/>
+          <img src={PhotoProfileImg} alt="Profile" width="50%" loading="lazy" />
           <h1 data-aos="zoom-out">
             Mustika
             <br />& Wira
@@ -32,7 +30,7 @@ function Welcome() {
         </div>
 
         <div className="header_top__image" data-aos="fade-right">
-          <img src={LeafOneImg} alt="flower"/>
+          <img src={LeafOneImg} alt="Flower" />
         </div>
 
         <div className="header__date">
@@ -41,10 +39,9 @@ function Welcome() {
         <div className="header__description">
           <p>di mohon kehadirannya</p>
         </div>
-        
       </header>
     </>
   );
-}
+};
 
 export default Welcome;
